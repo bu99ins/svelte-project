@@ -16,7 +16,7 @@
     },
     {
       id: "m2",
-      title: "Swim Togethe",
+      title: "Swim Together",
       subtitle: "Let's go for some swimming",
       description: "We will simply swim some rounds!",
       imageUrl:
@@ -37,6 +37,12 @@
 
 <section id="meetups">
   {#each meetups as meetup}
-    <MeetupItem />
+    <MeetupItem
+      title={meetup.title}
+      subtitle={meetup.subtitle}
+      description={meetup.description}
+      imageUrl={meetup.imageUrl}
+      email={meetup.email}
+      address={meetup.address} />
   {/each}
 </section>
