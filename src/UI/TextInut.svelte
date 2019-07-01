@@ -6,8 +6,8 @@
 <div class="form-control">
   <label for={id}>Description</label>
   {#if controlType === 'textarea'}
-    <textarea rows="3" {id} binnd:value={description} />
+    <textarea rows="3" {id} binnd:value={id} />
   {:else}
-    <input type="text" {id} binnd:value={title} />
+    <input type="text" {id} binnd:value={id} />
   {/if}
 </div>
