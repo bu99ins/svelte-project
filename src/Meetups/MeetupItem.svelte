@@ -56,6 +56,10 @@
   div {
     text-align: right;
   }
+
+  .content {
+    height: 4rem;
+  }
 </style>
 
 <article>
@@ -71,8 +75,8 @@
     </div>
     <footer>
       <Button href="mailto:{email}" type="button" caption="Contact" />
+      <Button mode="outline" type="button" caption="Favorite" />
       <Button type="button" caption="Show Details" />
-      <Button type="button" caption="Favorite" />
     </footer>
   </header>
 </article>
