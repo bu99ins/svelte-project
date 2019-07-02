@@ -1,13 +1,15 @@
 <script>
   export let controlType;
   export let id;
+  export let label;
+  export let rows;
 </script>
 
 <div class="form-control">
-  <label for={id}>Description</label>
+  <label for={id}>{label}</label>
   {#if controlType === 'textarea'}
-    <textarea rows="3" {id} binnd:value={id} />
+    <textarea {rows} {id} bind:value={id} />
   {:else}
-    <input type="text" {id} binnd:value={id} />
+    <input type="text" {id} bind:value={id} />
   {/if}
 </div>
